@@ -20,3 +20,6 @@
 
 + **Variational Progressive-Transfer Network for Soft Sensing of Multirate Industrial Processes**
 > 提出一种处理多速率软测量的迁移模型，首先根据过程变量的采样速率划分为不同的数据块，采用VAE的框架逐步从高速率数据块迁移至低速率数据块，最终得到完整的软测量模型。
+
++ **P-DIFF+: Improving learning classifier with noisy labels by Noisy Negative Learning loss**
+> 提出采用概率差异分布作为反映标签是否纯净的指标，即标签类概率减去其余类别中的最大概率，该指标越大越可能是纯净标签，据此将标签划分为纯净标签和噪声标签，结合NL思想将纯净标签和噪声标签同时用于对分类网络进行训练。
