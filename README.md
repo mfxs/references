@@ -26,3 +26,6 @@
 
 + **Joint Negative and Positive Learning for Noisy Labels**
 > NLNL的改进版本，通过损失函数的修改实现单阶段的快速收敛，并解决NL的欠拟合问题。NL+在NL的基础上引入固定系数项，从而调整了梯度图分布情况（这部分比较难懂），使得有噪声的样本不会由于处在高梯度区域而被挤到和干净样本重叠的区域，更好地实现了两类样本的分离，PL+在PL的基础上首先对干净样本的选取做了更严格的限制，同时也引入固定系数项，使得模型能够更专注于对干净样本的学习，提升收敛速度。
+
++ **Masked Autoencoders Are Scalable Vision Learners**
+> 基于MAE的图像表征学习方法，针对图像数据对patch进行mask，采用不对称的encoder和decoder结构恢复出原图，整体思路很简单，很多trick也是借鉴NLP的方法，不知道牛在哪里。
