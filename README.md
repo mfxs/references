@@ -32,3 +32,6 @@
 
 + **Time Series Shapelets: A New Primitive for Data Mining**
 > 提出一种用于时序数据局部特征提取的方法，首先将所有时序样本中满足长度要求的所有子序列作为Shapelet的候选集，分别计算每个候选子序列和时序样本之间的距离，基于此距离寻找能够将不同类样本划分的最佳分割阈值，类似决策树方法寻找分割后信息增益最大的候选子序列作为Shapelet，为了提高计算效率，提出两种优化技巧：1、采用滑窗方式计算候选子序列和时序样本之间距离时，若此时距离值已超过记录中的最小值时可以提前停止当前计算，将窗口向前滑动；2、计算出候选子序列和部分时序样本之间距离后，若此时所能达到的信息增益上限无法超过已有候选子序列的信息增益则可以提前排除当前候选子序列的计算。在用于时序数据分类任务时，类似于决策树的思想方法，每个结点含有对应Shapelet和距离阈值，根据时序样本和Shapelet之间距离与阈值的关系进入左右子树。
+
++ **Data-Driven Soft Sensor Design with Multiple-Rate Sampled Data: A Comparative Study**
+> 一篇较早的多速率软测量综述文章，将多速率软测量的方法归纳为4类：Numerical Interpolation，Polynomial Transformation，Data Lifting，Weighted PLS。Numerical Interpolation相当于采用上采样将由于多速率采样问题造成的缺失数据进行填补；Polynomial Transformation采用同乘多项式的方法使得参数估计时只使用快速率的过程变量和低速率的质量变量；Data Lifting相当于采用下采样将快速率的过程变量堆叠起来；Weighted PLS感觉像是没有堆叠过程变量直接下采样。
