@@ -35,3 +35,6 @@
 
 + **Data-Driven Soft Sensor Design with Multiple-Rate Sampled Data: A Comparative Study**
 > 一篇较早的多速率软测量综述文章，将多速率软测量的方法归纳为4类：Numerical Interpolation，Polynomial Transformation，Data Lifting，Weighted PLS。Numerical Interpolation相当于采用上采样将由于多速率采样问题造成的缺失数据进行填补；Polynomial Transformation采用同乘多项式的方法使得参数估计时只使用快速率的过程变量和低速率的质量变量；Data Lifting相当于采用下采样将快速率的过程变量堆叠起来；Weighted PLS感觉像是没有堆叠过程变量直接下采样。
+
++ **USAD: UnSupervised Anomaly Detection on Multivariate Time**
+> 提出一种结合AE和GAN的多变量时间序列异常检测方法。首先构造两个共用编码器的AE，再进行两阶段的训练，第一阶段采用常规重构损失对两个AE训练，第二阶段采用对抗学习的想法，将AE1的重构结果输入至AE2进行重构，AE1尽可能迷惑AE2无法判断输入的是原始数据还是重构数据，而AE2尽可能辨别是原始输入还是重构输入，最终根据两个AE得出的异常分数加权求和判断是否异常。通过两个AE对抗学习的方式能够放大异常和正常数据之间的差异。
