@@ -41,3 +41,6 @@
 
 + **Deep Forest: Towards an Alternative to Deep Neural Networks**
 > 提出一种利用随机森林实现深度模型的方法，本质上使用随机森林替代传统神经网络中的神经元，同时结合了许多深度学习的技巧，如Resnet、ELM、多尺度等，并且能够通过交叉验证方式自适应选择层数，控制模型复杂度。
+
++ **Feature-aligned Stacked Autoencoder: A Novel Semi-supervised Deep Learning Model for Pattern Classification of Industrial Faults**
+> 基于“预训练+微调”的半监督故障诊断问题，提出结合无标签样本伪标签信息，利用Sinkhorn距离将同类别有标签样本和无标签样本分布对齐。
