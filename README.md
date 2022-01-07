@@ -44,3 +44,6 @@
 
 + **Feature-aligned Stacked Autoencoder: A Novel Semi-supervised Deep Learning Model for Pattern Classification of Industrial Faults**
 > 基于“预训练+微调”的半监督故障诊断问题，提出结合无标签样本伪标签信息，利用Sinkhorn距离将同类别有标签样本和无标签样本分布对齐。
+
++ **Reconstruction-based Anomaly Detection with Completely Random Forest**
+> 提出一种基于完全随机森林的重构异常检测方法，根据每棵决策树所给出bounding box的交集，计算得到重构样本，根据重构误差大小判断样本是否发生异常。相较于基于自编码器的异常检测方法，训练效率更高，超参数更少。
