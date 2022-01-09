@@ -47,3 +47,6 @@
 
 + **Reconstruction-based Anomaly Detection with Completely Random Forest**
 > 提出一种基于完全随机森林的重构异常检测方法，根据每棵决策树所给出bounding box的交集，计算得到重构样本，根据重构误差大小判断样本是否发生异常。相较于基于自编码器的异常检测方法，训练效率更高，超参数更少。
+
++ **Removing the Background by Adding the Background: Towards BackgroundRobust Self-supervised Video Representation Learning**
+> 为了克服视频任务中的背景偏见，提出通过在原始视频中加入某一固定帧，使得背景信息被干扰，而动作信息不变，将新产生的视频和原始视频在特征空间内拉近，从而使得模型能够更加关注于视频中的动作本身，消除背景的影响。
